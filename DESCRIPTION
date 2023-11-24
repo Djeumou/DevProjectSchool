@@ -1,10 +1,10 @@
 Package: DevProjectSchool
-Title: Calculate the Fast Fourier Transform
+Title: Fast Fourier Transform Application
 Version: 0.0.0.9000
 Authors@R: 
     person("Marc", "Djeumou", , "marcdjeumou4@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: This package created is do to permite analyse of song using Fast Fourier Transform.
+Description: This package help you to analyse the specter of an audio song or compress the data as you want .
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8

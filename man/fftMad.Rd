@@ -2,19 +2,19 @@
 % Please edit documentation in R/fftMad.R
 \name{fftMad}
 \alias{fftMad}
-\title{Calculate the fast fourier transform}
+\title{Calculate the Fast Fourier Transform}
 \usage{
-fftMad(v)
+fftMad(x)
 }
 \arguments{
-\item{v}{the vector given to have the fast fourier transform}
+\item{x}{the vector given to have a fast fourier transform}
 }
 \value{
-The fast fourier transform of vector
+the fast fourier transform of vector x
 }
 \description{
-This function calculate the fast fourier transform of a given vector.
+This function calculate the discret fourier transform of a given vector.
 }
 \examples{
-fft(sin(5*seq(0, 2*pi, length.out=10)))
+fftMad(seq(O.2*pi, length.out = 20))
 }

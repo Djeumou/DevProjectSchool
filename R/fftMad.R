@@ -1,13 +1,13 @@
-#' Calculate the fast fourier transform
+#' Calculate the discret fourier transform
 #'
-#' This function calculate the fast fourier transform of a given vector.
+#' This function calculate the discret fourier transform of a given vector.
 #'
-#' @param v the vector given to have the fast fourier transform
+#' @param v the vector given to have the discret fourier transform
 #'
-#' @return The fast fourier transform of vector
+#' @return The discret fourier transform of vector v
 #'
 #' @examples
-#' fft(sin(5*seq(0, 2*pi, length.out=10)))
+#' DftMad(sin(5*seq(0, 2*pi, length.out=20)))
 #' @export
 DftMad <- function(v){
   y <- c()
@@ -27,7 +27,19 @@ DftMad <- function(v){
   return(y)
 }
 
-#Fast Fourier Tranform
+#Fast Fourier Tranform Algorithm Cooley-Tukey
+
+#' Calculate the Fast Fourier Transform
+#'
+#'This function calculate the discret fourier transform of a given vector.
+#'
+#' @param x the vector given to have a fast fourier transform
+#'
+#' @return the fast fourier transform of vector x
+#'
+#' @examples
+#' fftMad(seq(O.2*pi, length.out = 20))
+#' @export
 fftMad <- function(x) {
   N <- length(x)
   if (N == 1) {
@@ -41,6 +53,17 @@ fftMad <- function(x) {
 }
 
 # Inverse Cooley-Tukey FFT Algorithm
+
+#' Calculate the inverse fast fourier transform
+#'
+#'TRhis function calculate the inverse fast fourier transform of a given vector
+#' @param x  vector given to have inverse fast fourier transform
+#'
+#' @return inverse fast fourier transform of x
+#'
+#' @examples
+#' ifftMad(seq(0.2*pi, length.out = 20))
+#' @export
 ifftMad <- function(x) {
   n <- length(x)
   if(n == 1) {
